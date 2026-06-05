@@ -1,0 +1,759 @@
+
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>శ్రీ లైన్‌కొత్తూరు ఆంజనేయ స్వామి దేవాలయం</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+   .speciality-box{
+    width:100%;
+    max-width:100%;
+    padding:25px 35px;
+    line-height:2;
+    font-size:20px;
+    color:#fff;
+}
+
+@media(max-width:767px){
+
+.speciality-box{
+    padding:15px;
+    font-size:16px;
+}
+
+.speciality-box li{
+    font-size:15px;
+    padding:10px;
+}
+
+}
+
+.speciality-box li:hover{
+    transform:translateX(8px);
+    background:rgba(255,215,0,0.12);
+    box-shadow:0 0 15px rgba(255,215,0,.25);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Noto Sans Telugu',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+}
+
+.video-bg{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+.overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+z-index:-1;
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:767px){
+
+.hero h1{
+    font-size:1.8rem;
+    line-height:1.4;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+}
+
+.enter-btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 30px;
+background:#ff6f00;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+@media(max-width:767px){
+    .address{
+        position:relative;
+        top:auto;
+        right:auto;
+        margin:15px;
+        text-align:center;
+    }
+}
+
+nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:#7b1f00;
+    display:flex;
+    overflow-x:auto;
+    white-space:nowrap;
+    padding:10px;
+    gap:15px;
+    z-index:999;
+}
+
+nav a{
+    flex-shrink:0;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+}
+
+section{
+padding:70px 20px;
+background:rgba(0,0,0,.75);
+}
+
+.section-title{
+text-align:center;
+font-size:2rem;
+color:#ffd700;
+margin-bottom:30px;
+}
+
+.about{
+line-height:2;
+text-align:center;
+font-size:1.1rem;
+}
+
+.video-gallery video{
+width:100%;
+border-radius:15px;
+}
+
+.youth img{
+width:100%;
+border-radius:20px;
+border:4px solid gold;
+margin-bottom:20px;
+}
+
+.donors{
+background:white;
+color:black;
+padding:20px;
+border-radius:20px;
+}
+
+.donor-search{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:10px;
+border:1px solid gray;
+}
+
+.donor-list{
+max-height:400px;
+overflow-y:auto;
+}
+
+.donor-list li{
+padding:8px;
+border-bottom:1px solid #ddd;
+}
+
+.slogans{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+padding:30px;
+}
+
+.slogan{
+background:#ff6f00;
+padding:10px 18px;
+border-radius:25px;
+}
+
+.footer{
+text-align:center;
+padding:40px 20px 100px;
+background:#300;
+}
+
+audio{
+width:100%;
+margin-top:20px;
+}
+
+
+.hero h1{
+font-size:4rem;
+}
+.gallery-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+    padding:10px;
+}
+
+@media(min-width:768px){
+    .gallery-grid{
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    }
+}
+
+.gallery-item{
+    overflow:hidden;
+    border:2px solid gold;
+    border-radius:12px;
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:contain;   /* shows full image */
+    background:#000;
+    display:block;
+}
+.developer-credit{
+    position:fixed;
+    left:10px;
+    bottom:65px;
+    color:#ffd700;
+    padding:6px 12px;
+    border-radius:8px;
+    font-size:13px;
+    z-index:999;
+}
+img,
+video{
+    max-width:100%;
+    height:auto;
+}
+</style>
+</head>
+
+<body>
+<video autoplay muted loop class="video-bg">
+<source src="assets/Temple-Video.mp4" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="address">
+📍 దేవాలయ చిరునామా<br>
+లైన్‌కొత్తూరు గ్రామం<br>
+యలమంచిలి మండలం<br>
+అనకాపల్లి జిల్లా<br>
+ఆంధ్రప్రదేశ్
+</div>
+
+<header>
+
+<div class="hero">
+
+<h1>🚩 శ్రీ లైన్‌కొత్తూరు ఆంజనేయ స్వామి దేవాలయం 🚩</h1>
+
+<p>
+గ్రామ ప్రజల సహకారంతో నిర్మించబడిన
+పవిత్ర దేవాలయానికి స్వాగతం
+</p>
+
+<br>
+
+<p>
+📅 ప్రతిష్ఠ మహోత్సవం<br>
+02 జూన్ 2025
+</p>
+
+
+<a href="#about" class="enter-btn">
+దేవాలయంలోకి ప్రవేశించండి
+</a>
+
+</div>
+
+</header>
+
+<nav>
+<a href="#about">🏠 హోమ్</a>
+<a href="#speciality">🙏ఆలయ విశిష్టత</a>
+<a href="#gallery">📸 ఫోటోలు</a>
+<a href="#videos">🎥 వీడియోలు</a>
+<a href="#donors">🙏 దాతలు</a>
+<a href="#youth">💪 యువశక్తి</a>
+<a href="#donate">🙏 విరాళం కొరకు</a>
+</nav>
+
+<section id="about">
+
+<h2 class="section-title">
+🕉 దేవాలయం గురించి
+</h2>
+
+<div class="about">
+
+శ్రీ లైన్‌కొత్తూరు ఆంజనేయ స్వామి దేవాలయం
+గ్రామ ప్రజల సహకారం మరియు యువత
+అంకితభావంతో నిర్మించబడిన పవిత్ర దేవాలయం.
+
+జూన్ 2, 2025 నాడు
+విగ్రహ ప్రతిష్ఠ మహోత్సవం
+వైభవంగా నిర్వహించబడింది.
+
+</div>
+
+</section>
+<section id="speciality" class="section">
+    <h2>✨ ఆలయ విశిష్టత ✨</h2>
+
+    <div class="speciality-box">
+        <p>
+            శ్రీ వీర ఆంజనేయ స్వామి వారి ఆలయం భక్తుల విశ్వాసానికి,
+            ఆధ్యాత్మిక శక్తికి మరియు గ్రామ ఐక్యతకు ప్రతీకగా నిలుస్తోంది.
+            ఈ ఆలయంలో కొలువై ఉన్న వీర ఆంజనేయ స్వామివారిని దర్శించుకుని
+            భక్తులు తమ కోరికలను నెరవేర్చుకుంటారని విశ్వసిస్తారు.
+        </p>
+
+        <ul>
+            <li>🙏 గ్రామ ప్రజల ఆరాధ్య దైవంగా శ్రీ వీర ఆంజనేయ స్వామివారు వెలసి ఉన్నారు.</li>
+
+            <li>🕉️ భక్తితో ప్రార్థించిన వారికి ధైర్యం, బలం మరియు ఆత్మవిశ్వాసం ప్రసాదిస్తారని నమ్మకం.</li>
+
+            <li>💪 కష్టాలు, అడ్డంకులు మరియు భయాలను తొలగించే దైవంగా ఆంజనేయ స్వామివారు ప్రసిద్ధి పొందారు.</li>
+
+            <li>🎉 ప్రతి సంవత్సరం హనుమాన్ జయంతి సందర్భంగా వైభవంగా ఉత్సవాలు నిర్వహించబడతాయి.</li>
+
+            <li>🔥 ప్రత్యేక పూజలు, అభిషేకాలు, భజనలు మరియు అన్నదాన కార్యక్రమాలు నిర్వహించబడతాయి.</li>
+
+            <li>🌿 గ్రామ ప్రజల ఐక్యత, భక్తి మరియు సాంప్రదాయాలకు ఈ ఆలయం కేంద్ర బిందువుగా నిలుస్తోంది.</li>
+
+            <li>🏵️ ఆరోగ్యం, ఐశ్వర్యం, విజయాలు మరియు కుటుంబ శ్రేయస్సు కోసం భక్తులు స్వామివారిని దర్శించుకుంటారు.</li>
+
+            <li>🚩 ఆలయ ప్రాంగణం ప్రశాంతమైన ఆధ్యాత్మిక వాతావరణాన్ని కలిగి భక్తులకు మనశ్శాంతిని అందిస్తుంది.</li>
+        </ul>
+
+        <p style="text-align:center; font-weight:bold; color:#d35400;">
+            "శ్రీ వీర ఆంజనేయ స్వామివారి కృపతో భక్తులందరికీ
+            ధైర్యం, విజయం మరియు శుభఫలితాలు కలగాలని మనసారా కోరుకుంటున్నాము."
+        </p>
+    </div>
+</section>
+
+<section>
+
+<div class="slogans">
+
+<div class="slogan">🚩 జై శ్రీరామ్ 🚩</div>
+<div class="slogan">🚩 జై హనుమాన్ 🚩</div>
+<div class="slogan">🚩 ఆంజనేయ స్వామికి జై 🚩</div>
+<div class="slogan">🚩 శ్రీ రామదూత హనుమాన్ కి జై 🚩</div>
+<div class="slogan">🚩 సంకటమోచన హనుమాన్ కి జై 🚩</div>
+
+</div>
+
+</section>
+
+<!-- Photo Gallery -->
+<section id="gallery" class="gallery-section">
+    <h2>📸 ఆలయ ఫోటో గ్యాలరీ</h2>
+
+   <div class="gallery-grid">
+
+    <div class="gallery-item">
+        <img src="assets/hanuman1.jpg" alt="">
+    </div>
+
+    <div class="gallery-item">
+        <img src="assets/hanuman2.jpg" alt="">
+    </div>
+
+    <div class="gallery-item">
+        <img src="assets/hanuman3.jpg" alt="">
+    </div>
+
+    <div class="gallery-item">
+        <img src="assets/hanuman4.jpg" alt="">
+    </div>
+
+    <div class="gallery-item">
+        <img src="assets/hanuman5.jpg" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="assets/hanuman6.jpg" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="assets/hanuman7.jpg" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="assets/hanuman8.jpg" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="assets/hanuman9.jpg" alt="">
+    </div>
+    <div class="gallery-item">
+        <img src="assets/hanuman10.jpg" alt="">
+    </div>
+
+</div>
+</section>
+
+<section id="videos">
+
+<h2 class="section-title">
+🎥 వీడియో గ్యాలరీ
+</h2>
+
+<div class="video-gallery">
+
+<video controls>
+<source src="assets/Temple-Video.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</section>
+
+<section id="youth">
+
+<h2 class="section-title">
+💪 యువశక్తి
+</h2>
+
+<div class="youth">
+
+<img src="assets/youth-group.jpeg">
+
+<p style="line-height:2;text-align:center;">
+
+🙏 గ్రామ యువశక్తికి వందనాలు 🙏
+
+<br><br>
+
+మన గ్రామ యువత ఇంటింటికి వెళ్లి
+విరాళాలు సేకరించి ఈ పవిత్ర
+కార్యాన్ని విజయవంతం చేశారు.
+
+వారి సేవలు చిరస్మరణీయం.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="donors">
+
+<h2 class="section-title">
+🙏 దాతల వివరాలు
+</h2>
+
+<div class="donors">
+
+<input
+class="donor-search"
+type="text"
+placeholder="దాత పేరు వెతకండి..."
+onkeyup="searchDonor(this.value)"
+>
+
+<ul id="donorList" class="donor-list">
+
+<li>పాట్నాల రామారావు (శ్రీ భూమి డెవలపర్స్) - (కొత్తలి) — ₹1,00,116</li>
+<li>ఫ్యూజన్ బ్రిక్స్ — ₹1,00,000</li>
+<li>లవుడు లోవరాజు (Ex సర్పంచ్) — ₹75,000</li>
+<li>రాజాన నారాయణమ్మ (సోమన్నపాలెం) — ₹51,116</li>
+<li>రుత్తల గోవిందమ్మ W/o కచేరి లేటు — ₹30,116</li>
+<li>లవుడు రమణమ్మ W/o సత్యనారాయణ లేటు — ₹27,232</li>
+<li>కిర్లంపల్లి సంజీవరావు లేటు — ₹25,555</li>
+<li>లవుడు రాము S/o రాంబాబు — ₹25,116</li>
+<li>BOB SEV — ₹25,000</li>
+<li>అనిమిరెడ్డి రామకృష్ణ (సోమన్నపాలెం) — ₹25,000</li>
+<li>రుత్తల రాజు బాబు రైల్వే (కాకినాడ) — ₹25,000</li>
+<li>లవుడు అప్పారావు S/o బాబులు — ₹22,000</li>
+<li>కొల్లి త్రినాథ్ (సర్పంచ్) — ₹20,116</li>
+<li>సోలిశెట్టి సుబ్రహ్మణ్యం (ఒడిస్సా) — ₹20,116</li>
+<li>లవుడు అప్పారావు S/o ముసిలి — ₹20,116</li>
+<li>మాకిరెడ్డి రాజేష్ (సోమన్నపాలెం) — ₹20,000</li>
+<li>లవుడు రాజారావు S/o రాములు — ₹15,116</li>
+<li>లాలం సోమునాయుడు (సోమన్నపాలెం) — ₹15,000</li>
+<li>లవుడు పంతులు రాజు (మేస్త్రి) — ₹15,000</li>
+<li>వర్రీ గంగాధర్ (ఏటి కొత్తూరు) — ₹12,222</li>
+<li>కొల్లి శివ భార్గవ్ (బాబి) — ₹12,116</li>
+<li>డెక్క అమ్మోజి W/o శ్రీను లేటు — ₹11,616</li>
+<li>ధనిమిరెడ్డి రాము — ₹10,116</li>
+<li>లవుడు అప్పలనాయుడు S/o చిన్నయ్య — ₹10,116</li>
+<li>మంచం సూరిబాబు (ఒడిశా) — ₹10,116</li>
+<li>రుత్తల సత్యనారాయణ (ఏపీ జెన్కో) — ₹10,116</li>
+<li>కొల్లి విష్ణు త్రినాథ్ (ఫైనాన్స్) — ₹10,116</li>
+<li>రుతల అచ్చియమ్మ మనవడు లాలం గంగాధర్ (నాణ్యమ్మపాలెం) — ₹10,116</li>
+<li>లాలం కాశీనాయుడు (జల్లూరు) — ₹10,000</li>
+<li>లవుడు రాజబాబు (టాటా ఏస్) మరియు మూడు కేజీల గంట — ₹10,000</li>
+<li>రుత్తుల అప్పారావు (రైల్వే) — ₹10,000</li>
+<li>భీమిరెడ్డి భవాని (మల్లవరం) — ₹10,000</li>
+<li>పోలుపర్తి బెనర్జీ నాయుడు (రావన్నపాలెం) — ₹10,000</li>
+<li>లవుడు వెంకటరమణ (రైల్వే) — ₹10,000</li>
+<li>వర్రీ ప్రసాద్ S/o రాంబాబు — ₹10,000</li>
+<li>రుత్తల వెంకటరమణ (రైల్వే) — ₹10,000</li>
+<li>లవుడు గోవింద్ (రైల్వే కాకినాడ) — ₹10,000</li>
+<li>రుత్తల గణేష్ S/o శివరావు — ₹10,000</li>
+<li>లాలం వెంకటరమణ (రైల్వే) — ₹10,000</li>
+<li>లవుడు అప్పలనాయుడు (ఆటో అప్పన్న) — ₹10,000</li>
+<li>జాగరపు పైడ్ రెడ్డి (జారపు వాళ్లు ఊరు) — ₹10,000</li>
+<li>రుత్తల రత్నం W/o అప్పలనాయుడు లేటు — ₹10,000</li>
+<li>రుత్తల సన్యాసినాయుడు (పాలు Ps) — ₹10,000</li>
+<li>రుత్తల రాజబాబు S/o సంగురాజులు (మెకానిక్) - ₹10,000</li>
+<li>లాలం రామకృష్ణ (సోమన్నపాలెం) - ₹10,116</li>
+<li>కొల్లి అశోక్ S/o మల్లు నాయుడు - ₹10,000</li>
+<li>బి. నారాయణరావు (వైజాగ్) - ₹10,000</li>
+<li>రుత్తల బుల్లిబాబు S/o సంగురాజులు - ₹10,000</li>
+<li>రుత్తల గోవింద్ S/o మొండి అప్పలనాయుడు - ₹10,000</li>
+<li>బంగారు అప్పలనాయుడు (కొలనీ) - ₹10,000</li>
+<li>రుత్తల అప్పలనాయుడు (రైల్వే) - ₹10,000</li>
+<li>పూటకూటి రమేష్ నాయుడు (యలమంచిలి) - ₹10,000</li>
+<li>దాసరి గణేష్ S/o కుమార్ (పెద్దపల్లి) - ₹10,000</li>
+<li>ఇత్తంశెట్టి అప్పలనాయుడు (పోతిరెడ్డి పాలెం సర్పంచ్) - ₹6,116</li>
+<li>లాలం సత్తిబాబు (పాలు ప్రెసిడెంట్) - ₹5,116</li>
+<li>సూరెడ్డి అప్పలనాయుడు (భీమ పోయిన పాలెం) - ₹5,116</li>
+<li>రుత్తల ఉమామహేశ్వరరావు (సోమన్నపాలెం) - ₹5,111</li>
+<li>లవుడు రాజారావు S/o అక్కయ్య (తుని మెడికల్ షాప్) - ₹5,116</li>
+<li>రుత్తల నూకరాజు (మరిబంద) - ₹5,116</li>
+<li>శివకోటి రఘువంశి - ₹5,000</li>
+<li>ముకల సత్యనారాయణ (లైన్ ఇన్స్పెక్టర్) - ₹5,000</li>
+<li>అన్నం బాబి (ఏటికొప్పాక) - ₹5,000</li>
+<li>గన్న బత్తుల శేషు (పిఎస్ఆర్ పేట) - ₹5,001</li>
+<li>సానా నాని (పిఎస్ఆర్ పేట) - ₹5,000</li>
+<li>దొంగల నాయుడు (మాకవరం) - ₹5,000</li>
+<li>రుత్తుల సత్తిబాబు (బీరకాయ పాలెం) - ₹5,000</li>
+<li>రుత్తల రత్నం W/o రాజులు (కాకినాడ) - ₹5,000</li>
+<li>కొండ్రపు రాజశేఖర్ - ₹5,000</li>
+<li>రుత్తల లక్ష్మణ్ S/o కిత్తయ్య - ₹5,000</li>
+<li>పోతల రమణ (తుని మనమ్మ) - ₹5,000</li>
+<li>ఏక చిన్నారావు & రాజమ్మ దంపతులు (వైజాగ్) - ₹5,000</li>
+<li>శ్రీకాకుళపు వెంకట్రావు (కోట డీలర్) - ₹5,000</li>
+<li>డోకల నాయుడు (జాగ్రపు వాళ్లు ఊరు) - ₹5,000</li>
+<li>పైల శ్రీను (జాగరపు వాళ్ళ ఊరు) - ₹5,000</li>
+<li>రుత్తల శ్రీనివాసరావు (బిపిసిఎల్ బంక్) - ₹5,000</li>
+<li>మరిస భవాని (పెద్దపెల్లి) - ₹5,000</li>
+<li>రాజన్న అప్పలనాయుడు (BSNL) - ₹5,000</li>
+<li>వంటాకుల రామలక్ష్మి (రామన్న పాలెం) - ₹4,444</li>
+<li>లవుడు నాని / అర్జున్ - ₹4,000</li>
+<li>రుత్తల రాము (ఆటో) - ₹4,000</li>
+<li>లాలం రాజారావు S/o సూకరాజు - ₹3,000</li>
+<li>లాలం శ్రీను S/o నూకరాజు - ₹3,000</li>
+<li>లవుడు రాజబాబు S/o నారిబాబు - ₹3,000</li>
+<li>లవుడు రాజుబాబు S/o రాంబాబు - ₹3,116</li>
+<li>లవుడు సత్యవతి S/o అప్పారావు - ₹3,000</li>
+<li>దానిమిరెడ్డి మేఘన S/o సన్యాసిరావు - ₹3,000</li>
+<li>లవుడు కచ్చేరి S/o గేట్ మెన్ - ₹3,000</li>
+<li>రుత్తల ప్రకాష్ రావు (వెల్డింగ్ షాప్) - ₹3,000</li>
+<li>అల్లు సత్యనారాయణ (రైల్వే) - ₹3,000</li>
+<li>రుత్తల నూకునాయుడు (ఆటో) - ₹3,000</li>
+<li>రుత్తల రాజుబాబు (వెల్డింగ్ షాప్) - ₹3,000</li>
+<li>రుత్తల సాయి రాజు S/o నూకరాజు - ₹3,000</li>
+<li>లవుడు సత్యనారాయణ (వెల్డింగ్ షాప్) - ₹3,000</li>
+<li>రుతల చిన్నదేముడు పైడితల్లి - ₹3,000</li>
+<li>రుత్తల మైనర్ చిన్న - ₹3,000</li>
+<li>లవుడు చిటుల రమణ - ₹3,000</li>
+<li>లవుడు అప్పన్న (రైల్వే) - ₹3,000</li>
+<li>వుడా శ్రీ రామ్ మూర్తి - ₹3,000</li>
+<li>రంగ రాజు (మాస్టర్) - ₹3,000</li>
+<li>లాలం అప్పల నాయుడు - ₹3,000</li>
+<li>లవుడు సత్యనారాయణ S/o రమణ - ₹3,000</li>
+<li>లవుడు చంద్ర రావు S/o రమణ - ₹3,000</li>
+<li>అడిగర్ల గంగరాజు - ₹3,000</li>
+<li>లవుడు పాలు కుమారి - ₹3,000</li>
+<li>రుత్తల రమణ (ఆటో) - ₹3,000</li>
+<li>రుత్తల రాజబాబు S/o సుద్దుల కొండ - ₹3,000</li>
+<li>డెక్కా కొండ - ₹3,000</li>
+<li>రుత్తల నూకరత్నం - ₹3,000</li>
+<li>లవుడు చినబాబు - ₹3,000</li>
+<li>రుత్తల అప్పల నాయుడు S/o నూకయ్య - ₹3,000</li>
+<li>జాగరపు శ్రీను (జాగరపు వారి ఊరూ) - ₹3,000</li>
+<li>లవుడు సత్యనారాయణ S/o రాములు (APEPDCL) - ₹3,000</li>
+<li>రుత్తల అప్పల నాయుడు (వంట మాస్టర్) - ₹3,116</li>
+<li>రుత్తల ప్రకాష్ (బ్రాండ్స్) - ₹3,000</li>
+<li>లవుడు నాగరాజు (నాగు) - ₹3,000</li>
+<li>అల్లు రాజుబాబు - ₹3,000</li>
+<li>రుత్తల బెన్నియ్య నాయుడు - ₹3,000</li>
+<li>రుత్తల శ్రీను S/o అప్పల నాయుడు (ఫ్లిప్ కార్ట్) - ₹3,000</li>
+<li>కొట్నీ వర ప్రసాద్ - ₹3,000</li>
+<li>రుత్తల సత్తి అప్పల రాజు S/o పెద్ద దేముడు - ₹3,000</li>
+<li>బొంతు పోతురాజు - ₹3,000</li>
+<li>సీమకుర్తి లెక్య శ్రీ నిధి (రాజమండ్రి) - ₹3,116</li>
+<li>లాలం మెట్టు సత్తి బాబు - ₹3,000</li>
+<li>సేనాపతి చిరంజీవి (మేస్త్రి ఎర్రవరం) - ₹3,000</li>
+<li>లవుడు సన్యాసి నాయుడు S/o బాబులు - ₹3,000</li>
+<li>రుత్తల వెంకట సూర్యనారాయణ (బుల్లెట్) - ₹3,000</li>
+<li>అల్లు రమణ బాబు S/o దేముడు - ₹3,000</li>
+<li>అల్లు అప్పల నాయుడు - ₹3,000</li>
+<li>కొల్లి పద్మ W/o మహేశ్వరరావు లేట్ - ₹3,000</li>
+<li>కొల్లి రాము నాయుడు - ₹3,000</li>
+<li>పెట్ల సత్యనారాయణ - ₹3,000</li>
+<li>బొంతు గవరియ్య - ₹3,000</li>
+<li>బొంతు కచ్చేరి - ₹3,000</li>
+
+<li>రాజాన ఎరకన్న అప్పల నాయుడు - ₹2,500</li>
+<li>అల్లు పోతురాజు S/o దేముడు - ₹2,500</li>
+<li>S. కుమారి W/o చిట్టి బాబు (రేగుపాలెం) - ₹2,500</li>
+<li>డొకల పరదేశి (రేగుపాలెం) - ₹2,552</li>
+
+<li>కాళ్ళ నూకల తల్లి S/o నూకరాజు - ₹2,000</li>
+<li>మత్తుర్తి నాగు (లైన్ కొత్తూరు కాలనీ) - ₹2,000</li>
+<li>లవుడు వెంకటేష్ S/o రాజారావు - ₹2,000</li>
+<li>లవుడు శ్రీనిక (జోగంపేట) - ₹2,000</li>
+<li>అల్లు రాజుబాబు S/o రాజులు - ₹2,000</li>
+<li>లవుడు చిట్లు అప్పల నాయుడు - ₹2,000</li>
+<li>లవుడు రాజు బాబు S/o కొండ - ₹2,000</li>
+<li>రాజన్న గోవింద్ (సోమన్నపాలెం బ్యాంక్) - ₹2,000</li>
+
+<li>లవుడు రమని D/o చిన బాబు - ₹1,500</li>
+
+<li>గంగాధర్ &amp; ఫ్రెండ్స్ - ₹1,235</li>
+
+<li>లాలం రమేష్ (చిన్న పూడి) - ₹1,116</li>
+<li>లవుడు అప్పల నాయుడు (గాజువాక) - ₹1,116</li>
+<li>భీముని అప్పారావు (తురంగలపాలెం) - ₹1,116</li>
+<li>రాజాన సోము నాయుడు - ₹1,116</li>
+<li>రాజాన రాములు (పురుషోత్తపురం) - ₹1,116</li>
+
+<li>లవుడు లక్ష్మి లేట్ రమణ - ₹1,016</li>
+
+<li>రుత్తల చిన్నమ్మలు W/o అగ్గిరాజు లేట్ - ₹1,000</li>
+<li>లవుడు ముసలమ్మ - ₹1,000</li>
+<li>లవుడు అప్పల నాయుడు (డ్రైవర్) - ₹1,000</li>
+<li>అల్లు అప్పలనాయుడు S/o దేవుడు - ₹1,000</li>
+<li>చంద్రగిరి బాబ్జ తాపీ మేస్త్రి (ఎర్రవరం) - ₹1,000</li>
+
+<li>కన్నయ్య నాయుడు, లోవరాజు, కిరణ్ (ఫ్లిప్‌కార్ట్ అన్‌లోడింగ్ టీం) - ₹5,000</li>
+
+</ul>
+</div>
+
+</section>
+<section id="donate" class="section">
+    <h2 style="color: orange;">🙏 విరాళాలు</h2>
+
+    <div class="donate-box">
+        <p>
+            శ్రీ ఆంజనేయ స్వామివారి ఆలయ అభివృద్ధికి భక్తులు తమ వంతు సహాయాన్ని అందించవచ్చు.
+            మీ విరాళాలు ఆలయ నిర్వహణ, ఉత్సవాలు మరియు సేవా కార్యక్రమాలకు ఉపయోగపడతాయి.
+        </p>
+
+        <h3 style="color: #ffd700;">📞 సంప్రదించండి</h3>
+        <h3></h3>
+        <p><strong>మొబైల్ నంబర్:</strong> +91 </p>
+        <h3>📱 UPI / QR కోడ్</h3>
+        <img src="qr.jpg" alt="Donation QR Code" class="qr-code">
+         <h3>పేరు : Lavudu </h3>
+
+        <p>
+            స్కాన్ చేసి మీ విరాళాన్ని పంపవచ్చు.
+        </p>
+    
+    </div>
+</section>
+
+
+<section>
+
+<h2 class="section-title">
+🎵 హనుమాన్ చాలీసా
+</h2>
+
+<audio controls>
+<source src="assets/hanuman-chalisa.mp3">
+</audio>
+<audio controls>
+<source src="assets/hanuman-chalisa2.mp3">
+</audio>
+
+</section>
+
+<div class="footer">
+
+<h3>
+🚩 శ్రీ లైన్‌కొత్తూరు ఆంజనేయ స్వామి దేవాలయం 🚩
+</h3>
+
+<br>
+
+జై శ్రీరామ్ 🚩<br>
+జై హనుమాన్ 🚩
+
+<br><br>
+
+© 2025 Linekothuru Hanuman Temple
+
+</div>
+
+<script>
+
+function searchDonor(value){
+
+let filter=value.toUpperCase();
+
+let ul=document.getElementById("donorList");
+
+let li=ul.getElementsByTagName("li");
+
+for(let i=0;i<li.length;i++){
+
+let txt=li[i].textContent;
+
+if(txt.toUpperCase().indexOf(filter)>-1){
+
+li[i].style.display="";
+
+}else{
+
+li[i].style.display="none";
+
+}
+
+}
+
+}
+
+</script>
+<div class="developer-credit">
+    Developed by <strong>Lalam Ramesh</strong>
+</div>
+</body>
+</html>
