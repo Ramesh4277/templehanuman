@@ -1,9 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="te">
-   <audio autoplay loop>
-<source src="assets/hanuman-chalisa.mp3" type="audio/mpeg">
-</audio>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -284,6 +281,9 @@ video{
 </head>
 
 <body>
+   <audio id="bgMusic" loop>
+    <source src="assets/hanuman-chalisa.mp3" type="audio/mpeg">
+</audio>
 <video
     class="video-bg"
     autoplay
@@ -771,6 +771,52 @@ li[i].style.display="none";
 
 }
 
+</script>
+   <script>
+const bgMusic = document.getElementById("bgMusic");
+
+// Start music after first touch/click
+function startBGM() {
+    bgMusic.play().catch(() => {});
+    document.removeEventListener("click", startBGM);
+    document.removeEventListener("touchstart", startBGM);
+}
+
+document.addEventListener("click", startBGM);
+document.addEventListener("touchstart", startBGM);
+
+// Pause BGM when any audio/video plays
+document.addEventListener("play", function(e) {
+
+    if (e.target.id !== "bgMusic") {
+        bgMusic.pause();
+    }
+
+}, true);
+
+// Resume BGM when media ends
+document.addEventListener("ended", function(e) {
+
+    if (e.target.id !== "bgMusic") {
+        bgMusic.play().catch(() => {});
+    }
+
+}, true);
+
+document.addEventListener("pause", function(e) {
+
+    if (e.target.id !== "bgMusic") {
+
+        const playingMedia =
+            [...document.querySelectorAll("audio,video")]
+            .filter(m => m.id !== "bgMusic" && !m.paused);
+
+        if (playingMedia.length === 0) {
+            bgMusic.play().catch(() => {});
+        }
+    }
+
+}, true);
 </script>
 </body>
 </html>
