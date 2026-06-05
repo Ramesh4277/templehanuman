@@ -4,7 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>శ్రీ లైన్‌కొత్తూరు ఆంజనేయ స్వామి దేవాలయం</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
@@ -74,86 +76,33 @@ height:100%;
 background:rgba(0,0,0,0.55);
 z-index:-1;
 }
-   html,body{
-      overflow-x:hidden;
-      width:100%;
-   }
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
 
 @media (max-width: 767px){
 
-header{
-    height:auto;
-    min-height:100vh;
-    padding:15px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
+    .hero{
+        max-width:100%;
+        padding:10px;
+    }
 
-.hero{
-    width:100%;
-    max-width:100%;
-   overflow:hidden;
-   text-align:center;
-   padding-top:200px;
-}
+    .hero h1{
+        font-size:1.8rem;
+        line-height:1.3;
+        margin-bottom:10px;
+    }
 
-.hero h1{
-    font-size:2.2rem !important;
-    line-height:1.2;
-    margin-bottom:10px;
-    text-align:center;
-}
-
-.hero p{
-    font-size:0.9rem;
-    line-height:1.5;
-    text-align:center
-}
-
-.enter-btn{
-    display:block;
-    width:80%;
-    max-width:320px;
-    margin:25px auto;
-    padding:15px 25px;
-    background:linear-gradient(to right,#ffd700,#ffb300);
-    color:#7b1f00;
-    font-weight:bold;
-    text-decoration:none;
-    text-align:center;
-    border:2px solid #fff3b0;
-    border-radius:40px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.4);
-}
-@media (max-width: 767px) {
-
-.hero{
-    position: relative;
-}
-
-.address{
-    position: absolute !important;
-    top: 15px !important;
-    right: 10px !important;
-
-    width: 130px;
-
-    color: #fff;
-    font-size: 11px;
-    line-height: 1.4;
-    text-align: center;
-    padding: 8px;
-    border-radius: 10px;
-
-    z-index: 9999;
-}
-
-}
-}
-
-}
-}
+    .hero p{
+        font-size:1rem;
+        line-height:1.6;
+    }
 
     .enter-btn{
         padding:10px 20px;
@@ -166,9 +115,10 @@ header{
         padding:20px 15px;
     }
 
-    @media(max-width:767px){
-
-}
+    .address{
+        font-size:12px;
+        margin-bottom:15px;
+    }
 }
 
 .enter-btn{
@@ -181,6 +131,15 @@ text-decoration:none;
 border-radius:40px;
 font-weight:bold;
 }
+
+@media(max-width:767px){
+    .address{
+        position:relative;
+        top:auto;
+        right:auto;
+        margin:15px;
+        text-align:center;
+    }
 }
 
 nav{
@@ -338,7 +297,6 @@ video{
 
 <div class="address">
 📍 దేవాలయ చిరునామా<br>
-     <br>
 లైన్‌కొత్తూరు గ్రామం<br>
 యలమంచిలి మండలం<br>
 అనకాపల్లి జిల్లా<br>
@@ -349,7 +307,7 @@ video{
 
 <div class="hero">
 
-<h1>🚩 శ్రీ లైన్‌కొత్తూరు <br>ఆంజనేయ స్వామి దేవాలయం 🚩</h1>
+<h1>🚩 శ్రీ లైన్‌కొత్తూరు ఆంజనేయ స్వామి దేవాలయం 🚩</h1>
 
 <p>
 గ్రామ ప్రజల సహకారంతో నిర్మించబడిన
@@ -377,8 +335,8 @@ video{
 <a href="#speciality">🙏ఆలయ విశిష్టత</a>
 <a href="#gallery">📸 ఫోటోలు</a>
 <a href="#videos">🎥 వీడియోలు</a>
-<a href="#youth">💪 యువశక్తి</a>
 <a href="#donors">🙏 దాతలు</a>
+<a href="#youth">💪 యువశక్తి</a>
 <a href="#donate">🙏 విరాళం కొరకు</a>
 </nav>
 
