@@ -58,13 +58,13 @@ overflow-x:hidden;
 }
 
 .video-bg{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-object-fit:cover;
-z-index:-2;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+    z-index:-2;
 }
 
 .overlay{
@@ -251,16 +251,6 @@ font-size:4rem;
     background:#000;
     display:block;
 }
-.developer-credit{
-    position:fixed;
-    left:10px;
-    bottom:65px;
-    color:#ffd700;
-    padding:6px 12px;
-    border-radius:8px;
-    font-size:13px;
-    z-index:999;
-}
 img,
 video{
     max-width:100%;
@@ -270,8 +260,14 @@ video{
 </head>
 
 <body>
-<video autoplay muted loop class="video-bg">
-<source src="assets/Temple-Video.mp4" type="video/mp4">
+<video
+    class="video-bg"
+    autoplay
+    muted
+    loop
+    playsinline
+    webkit-playsinline>
+    <source src="assets/Temple-Video.mp4" type="video/mp4">
 </video>
 
 <div class="overlay"></div>
@@ -752,8 +748,5 @@ li[i].style.display="none";
 }
 
 </script>
-<div class="developer-credit">
-    Developed by <strong>Lalam Ramesh</strong>
-</div>
 </body>
 </html>
