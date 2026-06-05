@@ -126,17 +126,32 @@ header{
     border-radius:40px;
     box-shadow:0 4px 10px rgba(0,0,0,0.4);
 }
-@media(max-width:767px){
+@media (max-width: 767px) {
+
+.hero{
+    position: relative;
+}
 
 .address{
-    position:absolute;
-    top:15px;
-    right:10px;
+    position: absolute !important;
+    top: 15px !important;
+    right: 10px !important;
 
-    width:140px;
-    padding:8px;
-    font-size:11px;
-    line-height:1.4;
+    width: 130px;
+
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.4;
+    text-align: center;
+
+    background: rgba(0,0,0,0.45);
+    padding: 8px;
+    border-radius: 10px;
+
+    z-index: 9999;
+}
+
+}
 }
 
 }
